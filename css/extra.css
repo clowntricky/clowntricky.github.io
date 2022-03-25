@@ -1,0 +1,111 @@
+body,
+html {
+	background-color: transparent;
+	text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
+}
+
+#bg-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	zoom: 1;
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
+	-webkit-filter: opacity(95%);
+	/* Chrome, Safari, Opera */
+	filter: opacity(95%);
+}
+
+#Clipboard {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -99999;
+}
+
+#meitu_iframe,
+#music_iframe {
+	width: calc(100% + 18px);
+	height: 400px;
+}
+
+#editor {
+	white-space: pre-wrap;
+	word-break: break-all;
+	text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
+}
+
+#editor a {
+	color: #ff4081;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#file_title {
+	margin-bottom: 15px;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
+
+.play-text {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: calc(50% - 70px);
+	font-size: 30px;
+	color: rgba(116, 111, 255, .7);
+	text-shadow: 0 0 0 #746fff;
+}
+
+body,
+html,
+#editor,
+#editor code {
+	font-family: 'Itim', 'Fira Code', 'ZCOOL KuaiLe', 'RocknRoll One', 'Nanum Pen Script', 'Sarasa Mono SC', 'Cascadia Code', 'Menlo, Consolas', 'monaco', 'Noto Sans SC';
+}
+
+.mdui-theme-layout-dark {
+	color: #fff;
+	text-shadow: 0 0 0 #303030;
+	background-color: #303030
+}
+
+.mdui-theme-layout-dark #editor {
+	text-shadow: 0 0 0 #303030
+}
+
+@media screen and (min-width:1025px) {
+	#editor {
+		width: 70%;
+		position: relative;
+		left: 15%;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.mdui-text-truncate-s {
+		overflow: auto;
+		white-space: nowrap;
+	}
+
+	#editor {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:600px) {
+	#editor {
+		width: 80%;
+		position: relative;
+		left: 10%;
+	}
+
+	.mdui-text-truncate-b {
+		overflow: auto;
+		white-space: nowrap;
+	}
+}
