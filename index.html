@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<script>
-			var where = document.referrer;
-			if (where == "") {
-				top.location.href = "https://tknav.netlify.app"
-			} else {
-				top.location.href = "https://b23.tv/j0rQzU"
-			}
-		</script>
-	</head>
-	<body>
-	</body>
-</html>
+<title>loading</title>
+<script>
+var jump;
+jump = setTimeout(function(){top.location.href = "http://iw233.cn/api.php?sort=random";}, 3000);
+function clickThreeTime(){
+	clearTimeout(jump)
+	var counter=document.form1.counter;
+	counter.value = parseInt(counter.value)+1;
+	if( counter.value == "5") {
+		top.location.href = "https://tknav.netlify.app";
+		counter.value="0";
+	}
+}
+</script>
+</head>
+<body style="width:100vh;height:100vh;overflow:hidden" onclick="clickThreeTime()">
+	<div style="display: none;z-index: 0;"><form name = "form1"><input type="button" name = "counter" value=0></div>
+</form>
+</body>
